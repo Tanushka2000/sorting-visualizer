@@ -1,0 +1,122 @@
+
+.dark-background {
+    background-color: #DFD3C3;
+}
+
+.text-color {
+    color: black;
+    font-size: 2.5rem;
+    font-weight: 800 ;
+    font-style: italic;
+ 
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+
+}
+
+body {
+    background-color:#7D6E83;
+}
+
+.flex-container {
+    margin-top: 10px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 600px;
+    justify-content: center;
+    transition: 2s all ease;
+}
+
+.flex-item {
+    background: #F5F5DC;
+    border: 1pt solid black;
+    width: 10px;
+    transition: 0.1s all ease;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+}
+
+#input-panel {
+    margin-top: 20px;
+
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+#sorting {
+    margin-bottom: 50px;
+    transform: rotate(360deg) scaleX(-1); 
+}
+
+.range-input {
+    box-sizing: border-box;
+    top: 50%;
+    left: 50%;  
+    transform: translate(-50%, -50%);
+    align-items: center;
+    border-radius: 10px;
+    line-height: 50px;
+    display: flex;
+    vertical-align: middle;
+    height: 50px;
+}
+.range-input input {
+    -webkit-appearance: none;
+    width: 200px;
+    height: 2px;
+    background-color:white;
+
+    position: absolute;
+    top: 50%;
+}
+.range-input input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #eee;
+    border: 2px solid #1f4068;
+    border-radius: 50%;
+    outline: none;
+}
+.range-input input::-webkit-slider-thumb:hover {
+    background-color: #1f4068;
+}
+
+.range-input .label{
+    color: white;
+    font-weight:600;
+    display: flex; 
+    height: 35px; 
+    line-height: 35px; 
+    margin: auto;
+}
+@keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
